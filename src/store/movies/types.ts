@@ -1,0 +1,8 @@
+// Action Types
+export const GET_MOVIES = 'GET_MOVIES';
+export const GET_MOVIES_SUCCESS = 'GET_MOVIES_SUCCESS';
+export const GET_MOVIES_FAIL = 'GET_MOVIES_FAIL';
+export const GET_MOVIE_BY_ID = 'GET_MOVIE_BY_ID';
+export const GET_MOVIE_BY_ID_SUCCESS = 'GET_MOVIE_BY_ID_SUCCESS';
+export const GET_MOVIE_BY_ID_FAIL = 'GET_MOVIE_BY_ID_FAIL';
+export const GET_TOTAL_PAGES = 'GET_TOTAL_PAGES';
