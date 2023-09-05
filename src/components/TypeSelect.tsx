@@ -2,7 +2,7 @@ import React from 'react';
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 
 interface TypeSelectProps {
-	selectedType: string;
+	selectedType: string | undefined;
 	onTypeChange: (newType: string) => void;
 }
 

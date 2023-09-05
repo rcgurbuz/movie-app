@@ -1,4 +1,13 @@
-import { GET_MOVIES, GET_MOVIES_FAIL, GET_MOVIES_SUCCESS, GET_MOVIE_BY_ID, GET_MOVIE_BY_ID_FAIL, GET_MOVIE_BY_ID_SUCCESS, GET_TOTAL_PAGES } from './types';
+import {
+	GET_MOVIES,
+	GET_MOVIES_FAIL,
+	GET_MOVIES_SUCCESS,
+	GET_MOVIE_BY_ID,
+	GET_MOVIE_BY_ID_FAIL,
+	GET_MOVIE_BY_ID_SUCCESS,
+	GET_TOTAL_PAGES,
+	SET_SEARCH_PARAMS,
+} from './types';
 import { IAction, IMoviesState } from './movies';
 
 const initalState: IMoviesState = {
@@ -10,6 +19,7 @@ const initalState: IMoviesState = {
 	isLoading: false,
 	error: undefined,
 	totalPages: 0,
+	sarchParams: { searchTitle: 'john' },
 };
 
 export default function rootReducer(state = initalState, action: IAction) {
@@ -43,6 +53,12 @@ export default function rootReducer(state = initalState, action: IAction) {
 				...state,
 				isLoading: false,
 				totalPages: action.payload,
+			};
+		case SET_SEARCH_PARAMS:
+			return {
+				...state,
+				isLoading: false,
+				sarchParams: { ...state.sarchParams, ...action.payload },
 			};
 		default:
 			return state;

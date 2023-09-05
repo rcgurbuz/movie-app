@@ -4,6 +4,7 @@ export interface IMoviesState {
 	isLoading: boolean;
 	error?: string;
 	totalPages: number;
+	sarchParams?: { searchTitle?: string; year?: string; type?: string };
 }
 
 export interface IMovies {
@@ -71,4 +72,10 @@ export interface IAction {
 	searchName?: string;
 	year?: string;
 	i?: string;
+}
+
+export interface ISearchParams {
+	searchTitle?: string;
+	year?: string;
+	type?: string;
 }

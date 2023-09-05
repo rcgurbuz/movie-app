@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 interface SearchBoxProps {
 	onSearch: (searchTerm: string) => void;
-	searchTitle: string;
+	searchTitle?: string;
 }
 
 const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, searchTitle }) => {

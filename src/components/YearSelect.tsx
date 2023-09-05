@@ -3,7 +3,7 @@ import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import { SelectChangeEvent } from '@mui/material/Select';
 
 interface YearSelectProps {
-	selectedYear: string;
+	selectedYear: string | undefined;
 	onYearChange: (newYear: string) => void;
 }
 
