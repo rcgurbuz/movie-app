@@ -16,7 +16,7 @@ import FilterButton from '../../components/FilterButton';
 import { SpinnerWrapper } from '../../theme';
 import { CircularProgress as Spinner } from '@material-ui/core';
 
-const Home: FC = () => {
+const Home = () => {
 	const { movies, totalPages, sarchParams, isLoading } = useSelector<RootState, IMoviesState>((state: RootState) => state?.movies);
 	const dispatch = useDispatch();
 	const [currentPage, setCurrentPage] = useState(1);

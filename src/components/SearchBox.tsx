@@ -7,7 +7,7 @@ interface SearchBoxProps {
 	searchTitle?: string;
 }
 
-const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, searchTitle }) => {
+const SearchBox = ({ onSearch, searchTitle }: SearchBoxProps) => {
 	const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const newSearchTerm = event.target.value;
 		onSearch(newSearchTerm);

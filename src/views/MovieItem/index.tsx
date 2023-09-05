@@ -10,7 +10,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { CircularProgress as Spinner } from '@material-ui/core';
 import { SpinnerWrapper } from '../../theme';
 
-const MovieItem: FC = () => {
+const MovieItem = () => {
 	const { id } = useParams();
 	const dispatch = useDispatch();
 	const navigate = useNavigate();

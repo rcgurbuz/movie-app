@@ -7,7 +7,7 @@ interface YearSelectProps {
 	onYearChange: (newYear: string) => void;
 }
 
-const YearSelect: React.FC<YearSelectProps> = ({ selectedYear, onYearChange }) => {
+const YearSelect = ({ selectedYear, onYearChange }: YearSelectProps) => {
 	const startYear = 1900;
 	const endYear = 2023;
 	const years: string[] = [];

@@ -6,7 +6,7 @@ interface FilterButtonProps {
 	label: string;
 }
 
-const FilterButton: React.FC<FilterButtonProps> = ({ onClick, label }) => {
+const FilterButton = ({ onClick, label }: FilterButtonProps) => {
 	return (
 		<Button variant="contained" color="primary" onClick={onClick}>
 			{label}

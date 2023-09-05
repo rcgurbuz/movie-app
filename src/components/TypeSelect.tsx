@@ -6,7 +6,7 @@ interface TypeSelectProps {
 	onTypeChange: (newType: string) => void;
 }
 
-const TypeSelect: React.FC<TypeSelectProps> = ({ selectedType, onTypeChange }) => {
+const TypeSelect = ({ selectedType, onTypeChange }: TypeSelectProps) => {
 	const mediaTypes = [
 		{ value: 'movie', label: 'Film' },
 		{ value: 'series', label: 'Dizi' },
