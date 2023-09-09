@@ -6,9 +6,9 @@ export const StyledHeader = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: auto;
-	gap: 20px;
+	gap: ${props => props.theme.gutters.regular};
 	align-items: center;
-	padding: 20px;
+	padding: ${props => props.theme.gutters.regular};
 
 	.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
 		padding-left: 10px;
@@ -56,7 +56,7 @@ export const Wrapper = styled.div`
 `;
 
 export const MovieItem = styled.div`
-	margin: 20px;
+	margin: ${props => props.theme.gutters.regular};
 	img {
 		width: 100%;
 		height: 85%;
@@ -75,9 +75,9 @@ export const NotFound = styled.div`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 24px;
+	font-size: ${props => props.theme.fontSizes.large};
 	text-align: center;
-	color: white;
+	color: ${props => props.theme.colors.white};
 `;
 
 export const PaginationWrapper = styled.div`

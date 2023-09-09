@@ -22,18 +22,16 @@ const YearSelect = ({ selectedYear, onYearChange }: YearSelectProps) => {
 	};
 
 	return (
-		<div>
-			<FormControl>
-				<InputLabel>Yıl Seçin</InputLabel>
-				<Select value={selectedYear} onChange={handleChange}>
-					{years.map(year => (
-						<MenuItem key={year} value={year}>
-							{year}
-						</MenuItem>
-					))}
-				</Select>
-			</FormControl>
-		</div>
+		<FormControl>
+			<InputLabel>Yıl Seçin</InputLabel>
+			<Select value={selectedYear} onChange={handleChange}>
+				{years.map(year => (
+					<MenuItem key={year} value={year}>
+						{year}
+					</MenuItem>
+				))}
+			</Select>
+		</FormControl>
 	);
 };
 

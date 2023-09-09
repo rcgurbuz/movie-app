@@ -38,6 +38,7 @@ export const theme = {
 		regular: '14px',
 		regularBig: '18px',
 		bigger: '20px',
+		large: '24px',
 	},
 	fontWeights: {
 		thin: '100',

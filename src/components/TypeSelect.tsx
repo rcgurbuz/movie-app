@@ -19,18 +19,16 @@ const TypeSelect = ({ selectedType, onTypeChange }: TypeSelectProps) => {
 	};
 
 	return (
-		<div>
-			<FormControl>
-				<InputLabel>Medya Türünü Seçin</InputLabel>
-				<Select value={selectedType} onChange={handleChange}>
-					{mediaTypes.map(mediaType => (
-						<MenuItem key={mediaType.value} value={mediaType.value}>
-							{mediaType.label}
-						</MenuItem>
-					))}
-				</Select>
-			</FormControl>
-		</div>
+		<FormControl>
+			<InputLabel>Medya Türünü Seçin</InputLabel>
+			<Select value={selectedType} onChange={handleChange}>
+				{mediaTypes.map(mediaType => (
+					<MenuItem key={mediaType.value} value={mediaType.value}>
+						{mediaType.label}
+					</MenuItem>
+				))}
+			</Select>
+		</FormControl>
 	);
 };
 

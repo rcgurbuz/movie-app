@@ -39,8 +39,8 @@ const MovieItem = () => {
 						<img src={selectedMovie?.Poster !== 'N/A' ? selectedMovie?.Poster : NO_IMAGE_URL} alt="selected-movie-poster" />
 						<MovieInfo>
 							<Item>Title: {selectedMovie?.Title}</Item>
-							<Item>IMDB Rating: {selectedMovie?.Actors}</Item>
-							<Item>Actors: {selectedMovie?.imdbRating}</Item>
+							<Item>IMDB Rating: {selectedMovie?.imdbRating}</Item>
+							<Item>Actors: {selectedMovie?.Actors}</Item>
 							<Item>Year: {selectedMovie?.Year}</Item>
 							<Item>Director: {selectedMovie?.Director}</Item>
 							<Item>BoxOffice: {selectedMovie?.BoxOffice}</Item>
